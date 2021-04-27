@@ -1,5 +1,5 @@
 module.exports = {
+  productionSourceMap: false,
   runtimeCompiler: true,
-  publicPath: "[{[ .StaticURL ]}]",
-  parallel: 2,
-};
+  publicPath: '[{[ .StaticURL ]}]',
+}
