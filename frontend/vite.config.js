@@ -8,10 +8,6 @@ import pluginRewriteAll from "vite-plugin-rewrite-all";
 
 const plugins = [
   vue2(),
-  legacy({
-    targets: ["ie >= 11"],
-    additionalLegacyPolyfills: ["regenerator-runtime/runtime"],
-  }),
   compression({ include: /\.js$/i, deleteOriginalAssets: true }),
   pluginRewriteAll(), // fixes 404 error with paths containing dot in dev server
 ];
